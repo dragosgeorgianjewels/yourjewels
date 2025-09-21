@@ -77,5 +77,16 @@
 <footer>
   <p>&copy; 2025 YOURJEWELS. All rights reserved.</p>
 </footer>
+  <script>
+function showImg(productId, num) {
+  for(let i=1; i<=5; i++) {
+    let img = document.getElementById(${productId}-${i});
+    if(img) img.style.display = 'none';
+  }
+  document.getElementById(${productId}-${num}).style.display = 'block';
+}
+</script>
+</body>
+</html>
 </body>
 </html>
