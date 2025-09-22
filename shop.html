@@ -1,92 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YOURJEWELS - Shop</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOURJEWELS - Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Optional fallback if JS fails */
+    .product-gallery img {
+      display: none;
+    }
+    .product-gallery img:first-child {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-<header>
-  <h1>YOURJEWELS</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="shop.html">Shop</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-<main>
-  <h2>Our Collection</h2>
-  <nav class="category-nav">
-  <a href="#men">Men's Jewelry</a>
-  <a href="#women">Women's Jewelry</a>
-</nav>
-  <section class="products">
-    <h3 id="men">Men's Jewelry</h3>
-    <div class="product-grid">
-  <!-- Men’s Product 1 -->
-  <div class="product">
-    <div class="product-gallery">
-      <img id="m1-1" src="images/2.jpg" alt="Men's Product 1" style="display:block;">
-      <img id="m1-2" src="images/1.jpg" alt="Men's Product 1 Angle 2" style="display:none;">
-      <img id="m1-3" src="images/3.jpg" alt="Men's Product 1 Angle 3" style="display:none;">
-      <img id="m1-4" src="images/4.jpg" alt="Men's Product 1 Angle 4" style="display:none;">
-      <img id="m1-5" src="images/5.jpg" alt="Men's Product 1 Angle 5" style="display:none;">
-    </div>
-    <div class="gallery-buttons">
-      <button onclick="showImg('m1', 2)">1</button>
-      <button onclick="showImg('m1', 1)">2</button>
-      <button onclick="showImg('m1', 3)">3</button>
-      <button onclick="showImg('m1', 4)">4</button>
-      <button onclick="showImg('m1', 5)">5</button>
-    </div>
-    <h4>Men's Product 1</h4>
-    <p>$100</p>
-  </div>
-<!-- Men’s Product 2 -->
-  <div class="product">
-    <div class="product-gallery">
-      <img id="m2-1" src="images/1.jpg" alt="Men's Product 2" style="display:block;">
-      <img id="m2-2" src="images/2.jpg" alt="Men's Product 2 Angle 2" style="display:none;">
-      <img id="m2-3" src="images/3.jpg" alt="Men's Product 2 Angle 3" style="display:none;">
-      <img id="m2-4" src="images/4.jpg" alt="Men's Product 2 Angle 4" style="display:none;">
-      <img id="m2-5" src="images/5.jpg" alt="Men's Product 2 Angle 5" style="display:none;">
-    </div>
-    <div class="gallery-buttons">
-      <button onclick="showImg('m2', 1)">1</button>
-      <button onclick="showImg('m2', 2)">2</button>
-      <button onclick="showImg('m2', 3)">3</button>
-      <button onclick="showImg('m2', 4)">4</button>
-      <button onclick="showImg('m2', 5)">5</button>
-    </div>
-    <h4>Men's Product 2</h4>
-    <p>$100</p>
-  </div>
-</div>
-    <div class="product-grid">
-      <div class="product">Placeholder Product 1</div>
-      <div class="product">Placeholder Product 2</div>
-    </div>
-    <h3 id="women">Women's Jewelry</h3>
-    <div class="product-grid">
-      <div class="product">Placeholder Product 3</div>
-      <div class="product">Placeholder Product 4</div>
-    </div>
-  </section>
-</main>
-<footer>
-  <p>&copy; 2025 YOURJEWELS. All rights reserved.</p>
-</footer>
+  <header>
+    <h1>YOURJEWELS</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Collection</h2>
+
+    <nav class="category-nav">
+      <a href="#men">Men's Jewelry</a>
+      <a href="#women">Women's Jewelry</a>
+    </nav>
+
+    <section class="products">
+      <h3 id="men">Men's Jewelry</h3>
+      <div class="product-grid">
+        <!-- Men’s Product 1 -->
+        <div class="product">
+          <div class="product-gallery">
+            <img id="m1-1" src="images/2.jpg" alt="Men's Product 1">
+            <img id="m1-2" src="images/1.jpg" alt="Men's Product 1 Angle 2">
+            <img id="m1-3" src="images/3.jpg" alt="Men's Product 1 Angle 3">
+            <img id="m1-4" src="images/4.jpg" alt="Men's Product 1 Angle 4">
+            <img id="m1-5" src="images/5.jpg" alt="Men's Product 1 Angle 5">
+          </div>
+          <div class="gallery-buttons">
+            <button onclick="showImg('m1', 1)">1</button>
+            <button onclick="showImg('m1', 2)">2</button>
+            <button onclick="showImg('m1', 3)">3</button>
+            <button onclick="showImg('m1', 4)">4</button>
+            <button onclick="showImg('m1', 5)">5</button>
+          </div>
+          <h4>Men's Product 1</h4>
+          <p>$100</p>
+        </div>
+
+        <!-- Men’s Product 2 -->
+        <div class="product">
+          <div class="product-gallery">
+            <img id="m2-1" src="images/1.jpg" alt="Men's Product 2">
+            <img id="m2-2" src="images/2.jpg" alt="Men's Product 2 Angle 2">
+            <img id="m2-3" src="images/3.jpg" alt="Men's Product 2 Angle 3">
+            <img id="m2-4" src="images/4.jpg" alt="Men's Product 2 Angle 4">
+            <img id="m2-5" src="images/5.jpg" alt="Men's Product 2 Angle 5">
+          </div>
+          <div class="gallery-buttons">
+            <button onclick="showImg('m2', 1)">1</button>
+            <button onclick="showImg('m2', 2)">2</button>
+            <button onclick="showImg('m2', 3)">3</button>
+            <button onclick="showImg('m2', 4)">4</button>
+            <button onclick="showImg('m2', 5)">5</button>
+          </div>
+          <h4>Men's Product 2</h4>
+          <p>$100</p>
+        </div>
+      </div>
+
+      <!-- Placeholder Products -->
+      <div class="product-grid">
+        <div class="product">Placeholder Product 1</div>
+        <div class="product">Placeholder Product 2</div>
+      </div>
+
+      <h3 id="women">Women's Jewelry</h3>
+      <div class="product-grid">
+        <div class="product">Placeholder Product 3</div>
+        <div class="product">Placeholder Product 4</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 YOURJEWELS. All rights reserved.</p>
+  </footer>
+
   <script>
-function showImg(productId, num) {
-  for(let i=1; i<=5; i++) {
-    let img = document.getElementById(${productId}-${i});
-    if(img) img.style.display = 'none';
-  }
-  document.getElementById(${productId}-${num}).style.display = 'block';
-}
-</script>
-</body>
-</html>
+    function showImg(productId, num) {
+      for (let i = 1; i <= 5; i++) {
+        let img = document.getElementById(`${productId}-${i}`);
+        if (img) img.style.display = 'none';
+      }
+      let selectedImg = document.getElementById(`${productId}-${num}`);
+      if (selectedImg) selectedImg.style.display = 'block';
+    }
+  </script>
 </body>
 </html>
